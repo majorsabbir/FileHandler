@@ -12,7 +12,5 @@ $arr = []; // full path with file name goes here as array
 $Obj->setSourceFile($arr);
 
 $Obj->save();
-
-print("<pre>");
 print_r($x->getResult());
 </pre>
