@@ -60,7 +60,7 @@ class FileCopy {
 		}
 		if(is_array($this->_sourceFile)) {
 			foreach ($this->_sourceFile as $key => $value) {
-				$this->_result[$key] = copy($value, $this->_localFile($value));
+				$this->_result[$key] = copy($value, $this->_localFile($value)) ? $this->_localFile($value) : False;
 			}
 		}
 		
